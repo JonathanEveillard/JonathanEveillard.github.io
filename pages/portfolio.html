@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Jonathan Eveillard</title>
+    <link rel="stylesheet" href="/style-sheet/portfolio.css">
+    <link rel="stylesheet" href="/style-sheet/reset.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"/>
+    <link rel="icon" href="/icons-images/icons/software-development.png" type="image/x-icon" alt="icon">
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo"> PORTFOLIO </a>
+
+        <!-- NAV BAR-->
+
+        <ul class="nav">
+            <li>
+                <a href="/pages/index.html"><i>Home</i></a>
+            </li>
+
+            <li>
+                <a href="/pages/portfolio.html"><i>Portfolio</i></a>
+            </li>
+
+            <li>
+                <a href="about.html"><i>Game</i></a>
+            </li>
+        </ul>
+        <div class="search">
+            <input type="text" placeholder="Search">
+        </div>
+    </header>
+
+    <div class="banner">
+        <div class="content active">
+           
+            <h4>
+                <span> DATE </span><span><i>NAME</i></span><span>AGE</span>
+            </h4>
+            <p>
+                THIS IS JUST A FORMAT/TEMPLATE CREATED IN GOAL TO DEMONSTRATE MY PORTFOLIO, THERE IS NO ACTUAL CONTENT. PLEASE KEEP THAT IN MIND. <br> <br>
+                WHEN IMAGE OF THE BOX/CAROUSEL SELECTED IT WILL SHOW A DESCRIPTION OF THE PROJECT HERE.  THERE IS NO ACTUAL CONTENT. PLEASE KEEP THAT IN MIND.
+            </p>
+
+            <div class="carousel-box-visible">
+                <div class="carousel">
+    
+                    <div class="carousel-item">
+                        <img src="/icons-images/images/portfolio-page/slide1.jpg" alt="Art Image">
+                    </div>
+    
+                    <div class="carousel-item">
+                        <img src="/icons-images/images/portfolio-page/slide2.jpg" alt="Art Image">
+                    </div>
+    
+                    <div class="carousel-item">
+                        <img src="/icons-images/images/portfolio-page/slide3.jpg" alt="Code Image">
+                    </div>
+    
+                    <div class="carousel-item">
+                        <img src="/icons-images/images/portfolio-page/slide4.jpg" alt="Code Image">
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="carousel-box">
+            <div class="carousel">
+
+                <div class="carousel-item">
+                    <img src="/icons-images/images/portfolio-page/slide1.jpg" alt="Art Image">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="/icons-images/images/portfolio-page/slide2.jpg" alt="Art Image">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="/icons-images/images/portfolio-page/slide3.jpg" alt="Code Image">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="/icons-images/images/portfolio-page/slide4.jpg" alt="Code Image">
+                </div>
+
+            </div>
+        </div>
+
+      
+
+
+    </div>
+
+     <!--Footer-->
+     <footer>
+        <h6 style="font-size: 15px;">
+            © 2024 Jonathan Eveillard, All rights reserved.
+        </h6>
+    </footer>
+
+    <!--JAVASCRIPT-->
+
+
+    <script 
+        src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous">
+    </script>
+
+
+<!--JS LINK-->
+<script type=" text/javascript" src="/JavaScript/script.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>          
+    
+    <script>
+         $(document).ready(function(){
+            $('.carousel').carousel();
+                });
+    </script>
+
+</body>
+
+</html>

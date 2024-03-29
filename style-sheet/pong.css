@@ -1,0 +1,475 @@
+* {
+  padding: 0;
+  margin-right: 0;
+  box-sizing: border-box;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  list-style:none;
+  scroll-behavior:smooth ;
+}
+
+
+.content{
+  color: white;
+}
+
+:root{
+  --primary: #ff3700;
+  --bg-color: #fff;
+  --text-color: #221314;
+  --second-color: #5a7184;
+  --main-color: #6e54fa;
+  --big-font: 6rem;
+  --h2-font:  3rem;
+  --p-font: 1.1rem;
+}
+
+body{
+  background:  black;
+  font-family: sans-serif;
+}
+
+header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 100px;
+  z-index: 10;
+}
+
+.logo{
+  font-size: 40px;
+  color: white;
+  letter-spacing: 1px;
+  font-weight: 800;
+}
+
+.nav{
+  display: flex;
+}
+
+.nav li {
+  list-style: none;
+  margin: 0 10px;
+}
+
+.nav li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.nav li:hover a {
+  color: var(--primary);
+}
+
+/* .search{
+  position: relative;
+  width: 300px;
+  height: 40px;
+}
+*/
+
+.search input{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  background: transparent;
+  border: 1 solid rgba(255, 255, 255, 0.5);
+  outline: none;
+  border-radius: 25px;
+  padding: 0 10px 0 45px !important;
+  backdrop-filter: blur(10px);
+}
+
+.search input ::placeholder{
+  color: white;
+}
+
+.search i{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
+  padding-right: 10px;
+  color: white;
+  border-right: 1px solid white;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 0 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: url(/icons-images/images/about-page/game-background.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.banner2 {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 0 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: url(/icons-images/images/index-page/index-background-image.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.banner2::before{
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  background: black;
+}
+
+.banner::before{
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  background: black;
+}
+
+.content2{
+  position: relative;
+  max-width: 550px;
+  visibility: hidden;
+  transform: scale(0);
+  transition: 0.5s;
+}
+
+.content2.active{
+  display: block;
+  visibility: visible;
+  transform: scale(1);
+  transition: 0.5s;
+}
+
+
+
+.banner2 .content2 h4{
+  color: grey;
+  font-weight: 400;
+  font-size: 30px;
+}
+
+.banner2 .content2 h4 span{
+  padding: 0 10px;
+  border-right: 1px solid grey;
+}
+
+.banner2 .content2 h4 span:first-child{
+  padding-left: 0;
+}
+
+.banner2 .content2 h4 span:last-child{
+  border-right: none;    
+}
+
+
+
+.banner2 .content2 p
+{
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 1.5rem;
+  color: white;
+  margin: 10px 0 20 px;
+}
+
+
+.banner2 .content2
+{
+  position: relative;
+}
+
+
+
+
+.content{
+  position: relative;
+  max-width: 550px;
+  visibility: hidden;
+  transform: scale(0);
+  transition: 0.5s;
+}
+
+.content.active{
+  display: block;
+  visibility: visible;
+  transform: scale(1);
+  transition: 0.5s;
+}
+
+.Title
+{
+  max-width: 250px;
+}
+
+.banner .content h4{
+  color: grey;
+  font-weight: 400;
+  font-size: 30px;
+}
+
+.banner .content h4 span{
+  padding: 0 10px;
+  border-right: 1px solid grey;
+}
+
+.banner .content h4 span:first-child{
+  padding-left: 0;
+}
+
+.banner .content h4 span:last-child{
+  border-right: none;    
+}
+
+.banner>.content>h4>span>i {
+  background:var(--primary);
+  color: #ffffff;
+  padding: 0 8px;
+  display: inline-block;
+  border-radius: 8px;
+}
+
+.banner .content p
+{
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 1.5rem;
+  color: white;
+  margin: 10px 0 20 px;
+}
+
+
+.banner .content
+{
+  position: relative;
+}
+
+
+.banner .carousel-box{
+  position: relative;
+  min-width: 950px;
+  min-height: 450px;
+  display: flex;
+ 
+}
+
+
+
+.carousel {
+  position: relative;
+  height: 550px;
+  perspective: 1500;
+  width: 100%;
+}
+
+.carousel .carousel-item{
+  position: center;
+  width: 100%;
+  cursor: pointer
+}
+
+.carousel .carousel-item img{
+  max-width: 100%;
+  border-radius: 10px;
+  transform: none;
+  object-fit: cover;
+  object-position: center;
+}
+
+.carousel-box{
+  display: block;
+}
+
+.carousel-box-visible{
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .banner .carousel-box{
+      display: none;
+  }
+
+  .carousel-box-visible{
+      display: block;
+  }
+}
+
+
+.banner2>.content2>h4>span>i {
+  background:var(--primary);
+  color: #ffffff;
+  padding: 0 8px;
+  display: inline-block;
+  border-radius: 8px;
+}
+
+@media only screen and (max-width: 600px) {
+  .banner2>.content2>h4>span>i{
+      display: none;
+  }
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  gap: 10px;
+  grid-gap: 4vh;
+  padding-bottom: 50vh;
+  grid-column: span 2;
+  font-size: 1.5rem;
+  font-family: "outfit";
+  width: 100%;
+  color: white;
+  height: 100%
+}
+
+
+/*FOR TESTING PURPOSE NOT NEEDED */
+
+.grid-container > div {
+ /* background-color: rgba(255, 255, 255, 0.8); */
+  text-align: center;
+  font-size: 30px;
+  border-radius: 25px;
+}
+
+/* REST IMPORTANT CODE */
+
+.grid-container > div > a > img {
+  width: 100%;
+  border-radius: 35px;
+  object-fit: cover;
+  height: 85vh;
+  padding-top: 25px;
+  
+}
+
+.grid-container > div:hover{
+  filter: drop-shadow(1px 1px 1px #000000)  blur(6px) brightness(100%) grayscale(100%) ;
+  transform: scale(1.04);
+  transition: ease-in 0.5s;
+  display: block;
+
+}
+  
+
+.item1 {
+  grid-area: 2 / 2 / span 4 / span 1;
+  grid-row: 2;
+ 
+}
+
+.item2 {
+  grid-area: 2 / 3 / span 4 / span 2;
+  grid-row: 2;
+}
+
+.image-title ::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+
+.custom-font {
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.custom-font2 {
+  font-family: 'Workbench', sans-serif;
+  color: green;
+}
+
+footer
+{
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background: transparent;
+   text-align: center;
+   padding: 10px;
+   transition:ease 1.5s ;
+   color: white;
+   font-size: 25px;
+ }
+
+
+
+ .MyFooterSticky
+ {
+ background: var(--bg-color);
+ padding: 10px 18%;
+ box-shadow: rgba(33,35,38,0.1) 0px 10px 10px -10px;
+ transition:ease 1.5s ;
+  background-color: #ffffff;
+  color: black;
+  font-size: 15px;
+ }
+
+
+
+
+@media screen and (max-width: 768px) {
+  .footer {
+      font-size: 14px;
+  }
+}
+
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+#game {
+  text-align: center;
+  color: white;
+  padding-top: 255px ;
+}
+
+#guess{
+  color: white;
+}
